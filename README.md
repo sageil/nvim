@@ -32,6 +32,11 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 2. Clone this repo to `~/.config/`
 3. Start nvim from your terminal emulator
 
+## Note for none Mac M users
+
+If you plan to use python, please change the `python_host_prod` to point to your python installation.See screenshot below.
+![Options](assets/options.jpg)
+
 ## Spellcheck tips
 
 1. `[s` and `]s` to move to next and previous spelling errors
