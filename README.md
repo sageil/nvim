@@ -1,18 +1,40 @@
-''# 💤 LazyVim
-# DevOps
+# 💤 Sammy's `nvim` config
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.'
-Colour
-colour
-# Spell check 
+_A tailored development environment based on @folke's [LazyVim](https://github.com/lazyvim/lazyvim)_
+![nvim](assets/nvim.jpg)
+
+## Requirements
+
+- Neovim v9+.
+- Terminal emulator like kitty, wezterm or alacritty. Screenshots are made on Mac M2 with Wezterm as the emulator
+
+## Features
+
+- [x] IDE experience, out of the box
+- [x] Debug Python, Go, Rust, JS and others out of the box.
+- [x] Integrated tests for popular languages/frameworks (powered by Neotest)
+- [x] Floating, persistent terminal
+- [x] Editor context awareness and more powered by Treesitter.
+- [x] Native vim spellcheck capabilities
+- [x] LSP-sensitive completion context (import paths)
+- [x] A ton of themes
+
+## Screenshots
+
+![Default](assets/main.jpg)
+![Terminal](assets/terminal.jpg)
+![Find/Grep](assets/finder.jpg)
+![Spector](assets/findandreplace.jpg)
+
+## How to use
+
+1. Install newvim
+2. Clone this repo to `~/.config/`
+3. Start nvim from your terminal emulator
+
+## Spellcheck tips
+
 1. `[s` and `]s` to move to next and previous spelling errors
 2. Use `zg` to add word to dictionary
 3. Use `z=` to see suggestions
 4. To see suggestions why in insert mode, use `<C-x>` followed by `s`
-
-Jelo""
-
-
-
-
