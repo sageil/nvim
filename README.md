@@ -5,7 +5,11 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 
 ## Requirements
 
-- Neovim v9+.
+- Neovim >= 0.9.0
+- `git`
+- `rg` [rg](https://github.com/BurntSushi/ripgrep)
+- `fd` [fd](https://github.com/sharkdp/fd)
+- `lazygit` [lazygit](https://github.com/jesseduffield/lazygit)
 - Terminal emulator like kitty, wezterm or alacritty. Screenshots are made on Mac M2 with Wezterm as the emulator
 
 ## Features
@@ -34,8 +38,10 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 
 ## Note for none Mac M users
 
-If you plan to use python, please change the `python_host_prod` to point to your python installation.See screenshot below.
-![Options](assets/options.jpg)
+## Health Check
+
+To validate the installation, run checkhealth in your installation
+![checkhealth](assets/checkhealth.jpg)
 
 ## Spellcheck tips
 
