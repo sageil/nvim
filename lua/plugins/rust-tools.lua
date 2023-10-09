@@ -5,4 +5,8 @@ return {
   opts = {
     showDisassembly = "never",
   },
+  keys = {
+
+    { "<F5>", "<cmd>RustDebuggables<cr>", desc = "Start Debugger", ft = "rust" },
+  },
 }
