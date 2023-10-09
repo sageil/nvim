@@ -53,7 +53,7 @@ To validate the installation, run checkhealth in your installation
 | F5  | Javascript |   Start Dap debugging |
 | F10 | Step Over  |   Start Dap debugging |
 | F11 | Step Into  |   Start Dap debugging |
-| F11 |  Step Out  |   Start Dap debugging |
+| F12 |  Step Out  |   Start Dap debugging |
 
 ## Spellcheck tips
 
