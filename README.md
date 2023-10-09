@@ -43,6 +43,18 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 To validate the installation, run checkhealth in your installation
 ![checkhealth](assets/checkhealth.jpg)
 
+## Using F Keys to Debug
+
+| Key |  Language  |              Function |
+| --- | :--------: | --------------------: |
+| F5  |    Rust    | Start RustDebuggables |
+| F5  |     Go     |   Start Dap debugging |
+| F5  |   Python   |   Start Dap debugging |
+| F5  | Javascript |   Start Dap debugging |
+| F10 | Step Over  |   Start Dap debugging |
+| F11 | Step Into  |   Start Dap debugging |
+| F11 |  Step Out  |   Start Dap debugging |
+
 ## Spellcheck tips
 
 1. `[s` and `]s` to move to next and previous spelling errors
