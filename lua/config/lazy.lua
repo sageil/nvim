@@ -22,6 +22,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.terraform" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lsp.none-ls" },
     -- linters
 
     { import = "lazyvim.plugins.extras.linting.eslint" },
@@ -41,6 +42,9 @@ require("lazy").setup({
     -- have outdated releases, which may break your Neovim install.
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
+  },
+  ui = {
+    border = "rounded",
   },
   install = { colorscheme = { "catppuccin" } },
   checker = { enabled = true }, -- automatically check for plugin updates
