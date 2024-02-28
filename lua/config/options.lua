@@ -4,14 +4,7 @@
 -- local opt = vim.opt
 local gon = require("helpers.get_os_name")
 local home = os.getenv("HOME")
-local os_name, arch_name = gon.get_os_name()
-if os_name == "Mac" and arch_name == "arm" then
-  vim.g.python3_host_prog = "/opt/homebrew/bin/python3"
-elseif os_name == "Linux" then
-  vim.g.python3_host_prog = "/usr/bin/python3"
-else
-  vim.g.python3_host_prog = "CHANGE_TO_PYTHON3_INSTALL_DIRECTORY"
-end
+vim.g.python3_host_prog = "/usr/bin/python3"
 vim.o.pumblend = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0

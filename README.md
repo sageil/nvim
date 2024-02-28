@@ -32,7 +32,7 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 
 ## How to use
 
-1. Install newvim
+1. Install neovim
 2. Clone this repo to `~/.config/`
 3. Start nvim from your terminal emulator
 
