@@ -14,4 +14,5 @@ vim.o.spelllang = "en_ca"
 vim.o.spellfile = home .. "/.config/nvim/spell/en.utf-8.add"
 vim.o.spellsuggest = "best,10"
 vim.opt.fillchars = { eob = " " }
+vim.filetype.add({ extension = { templ = "templ" } })
 --vim.bo.buflisted = true

@@ -3,11 +3,11 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        templ = {
+        htmx = {
           cmd = {
-            "templ",
+            "htmx-lsp",
           },
-          filetypes = { "html", "templ" },
+          filetypes = { "html" },
           root_dir = require("lspconfig").util.find_git_ancestor,
           single_file_support = true,
         },
