@@ -7,7 +7,7 @@ return {
           cmd = {
             "htmx-lsp",
           },
-          filetypes = { "html" },
+          filetypes = { "templ" },
           root_dir = require("lspconfig").util.find_git_ancestor,
           single_file_support = true,
         },
