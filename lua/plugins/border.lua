@@ -18,7 +18,8 @@ return {
   -- lazyvim.plugins.editor
   {
     "which-key.nvim",
-    opts = { window = { border = BORDER_STYLE } },
+    win = { border = BORDER_STYLE },
+    --opts = { window = { border = BORDER_STYLE } },
   },
   {
     "gitsigns.nvim",
@@ -34,20 +35,10 @@ return {
     end,
   },
   {
-    "none-ls.nvim",
-    opts = { border = BORDER_STYLE },
-  },
-  {
     "mason.nvim",
     opts = {
       ui = { border = BORDER_STYLE },
     },
   },
   -- lazyvim.plugins.ui
-  {
-    "noice.nvim",
-    opts = {
-      presets = { lsp_doc_border = true },
-    },
-  },
 }
