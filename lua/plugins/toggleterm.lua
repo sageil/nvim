@@ -1,7 +1,4 @@
 return {
-  -- amongst your other plugins
-  --{ "akinsho/toggleterm.nvim", version = "*", config = true },
-  -- or
   {
     "akinsho/toggleterm.nvim",
     version = "*",
@@ -11,8 +8,6 @@ return {
     },
     float_opts = { border = "curved" },
     win = { border = "rounded" },
-    --config = true,
-    -- dir = "git_dir",
     autochdir = true,
   },
 }
