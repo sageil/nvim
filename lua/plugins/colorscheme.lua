@@ -1,9 +1,13 @@
 return {
-  -- Configure LazyVim to load gruvbox
   {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
       style = "storm",
     },
   },
