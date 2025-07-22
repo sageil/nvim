@@ -10,7 +10,7 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 - `rg` [rg](https://github.com/BurntSushi/ripgrep)
 - `fd` [fd](https://github.com/sharkdp/fd)
 - `lazygit` [lazygit](https://github.com/jesseduffield/lazygit)
-- Terminal emulator like kitty, wezterm or alacritty. Screenshots are made on Mac M2 with Wezterm as the emulator
+- Terminal emulator like kitty, wezterm or alacritty. Screenshots are made on Mac with Wezterm as the emulator
 
 ## Features
 
@@ -28,3 +28,40 @@ _A tailored development environment based on @folke's [LazyVim](https://github.c
 1. Install neovim
 2. Clone this repo to `~/.config/`
 3. Start nvim from your terminal emulator
+
+## Disable Transparency
+
+1. Open `init.lua`
+2. Delete or comment all lines after `require("config.lazy")`
+
+```lua
+  vim.cmd([[
+hi Normal guibg=NONE ctermbg=NONE
+hi NormalNC guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi StatusLine guibg=NONE ctermbg=NONE
+hi StatusLineNC guibg=NONE ctermbg=NONE
+hi VertSplit guibg=NONE ctermbg=NONE
+hi TabLine guibg=NONE ctermbg=NONE
+hi TabLineFill guibg=NONE ctermbg=NONE
+hi TabLineSel guibg=NONE ctermbg=NONE
+hi Pmenu guibg=NONE ctermbg=NONE
+hi PmenuSel guibg=NONE ctermbg=NONE
+hi NeoTreeNormal guibg=NONE ctermbg=NONE
+hi NeoTreeNormalNC guibg=NONE ctermbg=NONE
+hi NeoTreeWinSeparator guibg=NONE ctermbg=NONE
+hi NeoTreeEndOfBuffer guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+]])
+end
+
+-- Apply transparency settings initially
+set_transparency()
+
+-- Reapply transparency on buffer enter
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*",
+  callback = set_transparency,
+})
+
+```
