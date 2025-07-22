@@ -1,7 +1,7 @@
 # 💤 Sammy's `nvim` config
 
 _A tailored development environment based on @folke's [LazyVim](https://github.com/lazyvim/lazyvim)_
-![nvim](assets/nvim.jpg)
+![nvim](assets/nvim.png)
 
 ## Requirements
 
