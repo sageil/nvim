@@ -23,6 +23,12 @@ return {
       ["<S-Tab>"] = { "snippet_backward", "select_prev", "fallback" },
     },
     completion = {
+      documentation = {
+        window = {
+          border = "rounded",
+        },
+      },
+
       menu = {
         draw = {
           columns = {
@@ -31,11 +37,6 @@ return {
           },
         },
 
-        documentation = {
-          window = {
-            border = "rounded",
-          },
-        },
         border = "rounded",
         winhighlight = "Normal:BlinkCmpDoc,FloatBorder:BlinkCmpDocBorder,CursorLine:BlinkCmpDocCursorLine,Search:None",
       },

@@ -16,8 +16,7 @@
     "lazyvim.plugins.extras.lang.toml",
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
-    "lazyvim.plugins.extras.test.core",
-    "lazyvim.plugins.extras.util.gitui"
+    "lazyvim.plugins.extras.test.core"
   ],
   "install_version": 8,
   "news": {

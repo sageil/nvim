@@ -34,14 +34,12 @@ My setup depends on [Wezterm](https://wezterm.org/). You can clone mine from [my
 
 ## Disable Transparency
 
-1. Open `config/autocmds.lua`
+1. Open `init.lua`
 2. Delete or comment the following lines:
 
 ```lua
-vim.api.nvim_create_autocmd("ColorScheme", {
-  pattern = "*",
-  callback = function()
-    vim.cmd([[
+local function set_transparency()
+  vim.cmd([[
       hi normal guibg=none ctermbg=none
       hi normalnc guibg=none ctermbg=none
       hi signcolumn guibg=none ctermbg=none
@@ -76,9 +74,16 @@ vim.api.nvim_create_autocmd("ColorScheme", {
       hi winseparator guibg=none ctermbg=none
       hi pmenu guibg=none ctermbg=none
       hi pmenusel guibg=none ctermbg=none
+]])
+end
 
-      ]])
-  end,
+-- Apply transparency settings initially
+set_transparency()
+
+-- Reapply transparency on buffer enter
+vim.api.nvim_create_autocmd("BufEnter", {
+  pattern = "*",
+  callback = set_transparency,
 })
 
 ```
