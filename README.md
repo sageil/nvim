@@ -77,11 +77,9 @@ local function set_transparency()
 ]])
 end
 
--- Apply transparency settings initially
-set_transparency()
 
--- Reapply transparency on buffer enter
-vim.api.nvim_create_autocmd("BufEnter", {
+-- Reapply transparency on ColorScheme event
+vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
   callback = set_transparency,
 })
