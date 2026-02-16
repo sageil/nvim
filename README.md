@@ -23,7 +23,6 @@ My setup depends on [Wezterm](https://wezterm.org/). You can clone mine from [my
 - [x] Editor context awareness and more powered by Treesitter.
 - [x] Native vim spellcheck capabilities
 - [x] LSP-sensitive completion context (import paths)
-- [x] Copilot integration with VSCode like tab movement
 - [x] A ton of themes
 
 ## How to use
